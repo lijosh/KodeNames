@@ -32,7 +32,7 @@ $("#seed").val(Math.floor(Math.random() * 1000));
 fire();
 
 function fire() {
-	document.getElementById("cardtop").innerHTML = "Testing";
+	document.getElementById("cardtop").innerHTML = cardCategories[1];
 
 	//get seed and set the seed for randomizer
 	/*var seed = document.getElementById("seed").value;
