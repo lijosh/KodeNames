@@ -32,8 +32,8 @@ $("#seed").val(Math.floor(Math.random() * 1000));
 fire();
 
 function fire() {
-	document.getElementById("cardtop").innerHTML = cardCategories[0];
-	document.getElementById("cardsym").innerHTML = "<img src=\"data/" + cardSyms[0] + ".png\" />";
+	$("#cardtop").innerHTML = cardCategories[0];
+	$("#cardsym").css('background-image', 'url("data/' + cardSyms[0] + '.png")');
 
 	//get seed and set the seed for randomizer
 	/*var seed = document.getElementById("seed").value;
