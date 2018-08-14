@@ -32,8 +32,12 @@ $("#seed").val(Math.floor(Math.random() * 1000));
 fire();
 
 function fire() {
+	document.getElementById("card").innerHTML = cardCategories[0]
+
+
+
 	//get seed and set the seed for randomizer
-	var seed = document.getElementById("seed").value;
+	/*var seed = document.getElementById("seed").value;
 	Math.seedrandom(seed.toLowerCase());
 
 	var option = $('#gameMode :selected').val();
@@ -65,7 +69,7 @@ function fire() {
 
 	//fire new board
 	updateScore();
-	createNewGame();
+	createNewGame();*/
 }
 
 //not used, but probably useful at some point
