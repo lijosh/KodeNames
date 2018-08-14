@@ -32,7 +32,7 @@ $("#seed").val(Math.floor(Math.random() * 1000));
 fire();
 
 function fire() {
-	document.getElementById("card").innerHTML = cardCategories[0]
+	document.getElementById("card-top").innerHTML = cardCategories[0]
 
 
 
