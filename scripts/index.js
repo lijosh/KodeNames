@@ -32,9 +32,11 @@ $("#seed").val(Math.floor(Math.random() * 1000));
 fire();
 
 function fire() {
-	$("#cardtop").html("<p>" + cardCategories[0] + "</p>");
-	$("#cardsym").css('background-image', 'url(data/' + cardSyms[0] + '.png)');
-	$("#cardbottom").html("<p>" + cardCategories[0] + "</p>");
+	var randomCard = Math.floor(Math.random() * 104);
+
+	$("#cardtop").html("<p>" + cardCategories[randomCard] + "</p>");
+	$("#cardsym").css('background-image', 'url(data/' + cardSyms[randomCard] + '.png)');
+	$("#cardbottom").html("<p>" + cardCategories[randomCard] + "</p>");
 
 	//get seed and set the seed for randomizer
 	/*var seed = document.getElementById("seed").value;
