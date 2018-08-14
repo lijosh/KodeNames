@@ -21,13 +21,25 @@ html {
 	line-height : 99%;
 }
 
-#cardtop {
-    transform: rotate(180deg);
+#cardtop p {
+	margin: 5%;
+    top: 50%;
+	transform: rotate(180deg) perspective(1px) translateY(-50%);
 }
 
 #cardsym {
-    width: 50%;
+    width: 100px;
+    height: 100px;
+    background-size: 100px;
+    margin: auto;
 }
+
+#cardbottom p {
+	margin: 5%;
+    top: 50%;
+	transform: perspective(1px) translateY(-50%);
+}
+
 
 #board {
 	font-size : 1.4em;
